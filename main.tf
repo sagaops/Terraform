@@ -7,6 +7,12 @@ terraform {
   }
 }
 
+provider "aws" {
+  region = "ca-central-1"
+  access_key = "AKIA3V33QA3TWNTP2WFA"
+  secret_key = "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"
+}
+
 resource "aws_vpc" "main" {
   cidr_block = "10.0.0.0/16"
 }
